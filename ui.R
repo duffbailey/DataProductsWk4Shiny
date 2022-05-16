@@ -33,7 +33,15 @@ shinyUI(pageWithSidebar(
            h4("Birth Day "),
            verbatimTextOutput("birthDD"),
            h4("Sun Sign "),
-           verbatimTextOutput("sunSign")
+           verbatimTextOutput("sunSign"),
+           h3("User Documentation"),
+           p("This application returns the Zodiac sign for any person 
+           based on the month and day of their birth.  
+           Use the sliders to set the month number (1 for January, 2 for February, etc.) and 
+             the day of the month.  The appropriate sun sign will be displayed as output.
+             Birth dates are based on the Gregorian calendar.  Illogical month/day combinations 
+             such as 02/31 return the zodiac sign for their logical equivalent: (03/03)."),
+           h4("NOT TO BE USED FOR SIGNIFICANT LIFE DECISIONS")
         )
     )
 )
